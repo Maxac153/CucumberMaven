@@ -7,7 +7,6 @@ import io.cucumber.java.Scenario;
 public class AfterStepHooks {
     @AfterStep
     public void takeScreenShotAfterStep(Scenario scenario) {
-
-//        Selenide.screenshot(System.currentTimeMillis() + "steps");
+        Selenide.screenshot(System.currentTimeMillis() + "steps");
     }
 }
